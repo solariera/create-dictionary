@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
-    "lib": ["dom", "esnext"],
-    "jsx": "react-jsx",
+    "module": "commonJs",
     "declaration": true,
-    "rootDir": "src",
     "outDir": "lib",
     "isolatedModules": true,
     "skipLibCheck": true,
@@ -17,5 +14,5 @@
     "paths": { "~/*": ["*"] }
   },
   "include": ["src"],
-  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"]
+  "exclude": ["src/**/*.spec.ts"]
 }

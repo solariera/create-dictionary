@@ -1,6 +1,6 @@
 {
   "name": "@solariera/create-dictionary",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Create dictionary from array of object",
   "author": "Solariera <always@solariera.com> (https://github.com/solariera)",
   "license": "MIT",

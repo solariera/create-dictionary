@@ -1,5 +1,5 @@
 import { tests, TestData } from '@solariera/easy-jest/lib/tests';
-import { createDictionary as fn } from '.';
+import { createDictionary as fn } from '..';
 
 const data: TestData<typeof fn>[] = [
   {

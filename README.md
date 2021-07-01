@@ -1,5 +1,9 @@
 # Create Dictionary
 
+[![npm](https://img.shields.io/npm/v/@solariera/create-dictionary)](https://www.npmjs.com/package/@solariera/create-dictionary)
+[![npm](https://img.shields.io/npm/dw/@solariera/create-dictionary)](https://www.npmjs.com/package/@solariera/create-dictionary)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@solariera/create-dictionary)](https://bundlephobia.com/result?p=@solariera/create-dictionary)
+
 Create dictionary from array of object
 
 ## 1. Usage
@@ -21,28 +25,28 @@ yarn add @solariera/create-dictionary
 ```typescript
 import { createDictionary } from '@solariera/create-dictionary';
 
-const stringKeyData = [
+const entries = [
   { key: 'a', value: 'alfa' },
   { key: 'b', value: 'bravo' },
   { key: 'c', value: 'charlie' },
 ];
 
-const keyDictionary = createDictionary('key', stringKeyData);
-console.log(keyDictionary);
+const dictionary = createDictionary('key', entries);
+console.log(dictionary);
 // {
 //   a: { key: 'a', value: 'alfa' },
 //   b: { key: 'b', value: 'bravo' },
 //   c: { key: 'c', value: 'charlie' },
 // }
 
-const numberKeyData = [
+const entries = [
   { page: 2, value: 'bravo' },
   { page: 3, value: 'charlie' },
   { page: 1, value: 'alfa' },
 ];
 
-const pageDictionary = createDictionary('page', numberKeyData);
-console.log(pageDictionary);
+const dictionary = createDictionary('page', entries);
+console.log(dictionary);
 // {
 //   1: { page: 1, value: 'alfa' },
 //   2: { page: 2, value: 'bravo' },
@@ -52,11 +56,13 @@ console.log(pageDictionary);
 
 ## 2. Specifications
 
-### 2-1. Parameters
+### 2-1. Syntax & Parameters
 
-| No. | Name    | Type     | Description                    |
-| --- | ------- | -------- | ------------------------------ |
-| 1   | key     | string   | Key to specify for the index\* |
-| 2   | entries | object[] | Source data for the dictionary |
+#### createDictionary(`key`, `entries`)
+
+| No. | Name      | Type     | Required | Description                    |
+| --- | --------- | -------- | :------: | ------------------------------ |
+| 1   | `key`     | string   |   Yes    | Key to specify for the index\* |
+| 2   | `entries` | object[] |   Yes    | Source data for the dictionary |
 
 \*The value of the specified key can be of type string or number
